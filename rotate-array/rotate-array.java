@@ -4,17 +4,17 @@ class Solution {
 		int i = 0;
 		while(count< nums.length)
 		{
-			int curr = (i+k)%nums.length;
-			int prev = nums[i];
+			int current = (i+k)%nums.length;
+			int previous = nums[i];
 			do
 			{
-				int temp = nums[curr];
-				nums[curr] = prev;
-				prev = temp;
+				int temp = nums[current];
+				nums[current] = previous;
+				previous = temp;
 				count++;
-				curr = (curr+k)%nums.length;
+				current = (current+k)%nums.length;
 
-			}while(curr!=((i+k)%nums.length)); 
+			}while(current!=((i+k)%nums.length)); 
             i++;
 		}
 
