@@ -21,13 +21,10 @@ class Solution {
         while(num > 0)
         {
             int diff = num - offset;
-            System.out.println("Diff " + diff);
             if(diff >= 0)
             {
                 sb.append(map.get(offset));
-                System.out.println("String "+sb);
                 num -= offset;
-                System.out.println("Num " + num);
             }
             else
             {
