@@ -6,5 +6,4 @@ class Solution:
                 return True
             else:
                 count[nums[i]] = 1
-        print(count)
         return False
