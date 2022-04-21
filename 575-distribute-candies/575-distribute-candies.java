@@ -10,11 +10,7 @@ class Solution {
             }
         }
         int uniqueCandies = map.size();
-        if(totalCandies/2 > uniqueCandies){
-            return uniqueCandies;
-        }else{
-            return totalCandies/2;
-        }
+        return(Math.min(uniqueCandies,totalCandies/2));
         
     }
 }
