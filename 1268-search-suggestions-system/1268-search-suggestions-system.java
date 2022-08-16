@@ -8,16 +8,13 @@ class Solution {
             int i = 0;
             List<String> subList = new ArrayList<>();
             for(String product: products){
-                    if(product.startsWith(prefix)){
-                        subList.add(product);
-                        i++;
-                    }
-                    if(i == 3){
-                        i = 0;
-                        break;
-                        
-                    }
-                
+                if(product.startsWith(prefix)){
+                    subList.add(product);
+                    i++;
+                }
+                if(i == 3){
+                    break;
+                }    
             }
             result.add(subList);
         }
